@@ -1,0 +1,198 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '—-save-dev',
+1 verbose cli   'gulp' ]
+2 info using npm@1.2.18
+3 info using node@v0.10.15
+4 verbose read json /usr/local/server/www/Blog/package.json
+5 verbose read json /usr/local/server/www/Blog/node_modules/bootstrap-sass/package.json
+6 verbose read json /usr/local/server/www/Blog/node_modules/bower/package.json
+7 verbose read json /usr/local/server/www/Blog/node_modules/gulp/package.json
+8 verbose read json /usr/local/server/www/Blog/node_modules/gulp-concat/package.json
+9 verbose read json /usr/local/server/www/Blog/node_modules/gulp-jshint/package.json
+10 verbose read json /usr/local/server/www/Blog/node_modules/gulp-rename/package.json
+11 verbose read json /usr/local/server/www/Blog/node_modules/gulp-sass/package.json
+12 verbose read json /usr/local/server/www/Blog/node_modules/gulp-uglify/package.json
+13 verbose read json /usr/local/server/www/Blog/node_modules/jshint/package.json
+14 verbose read json /usr/local/server/www/Blog/node_modules/laravel-elixir/package.json
+15 verbose from cache /usr/local/server/www/Blog/package.json
+16 verbose readDependencies using package.json deps
+17 verbose cache add [ '—-save-dev', null ]
+18 verbose cache add name=undefined spec="—-save-dev" args=["—-save-dev",null]
+19 verbose parsed url { protocol: null,
+19 verbose parsed url   slashes: null,
+19 verbose parsed url   auth: null,
+19 verbose parsed url   host: null,
+19 verbose parsed url   port: null,
+19 verbose parsed url   hostname: null,
+19 verbose parsed url   hash: null,
+19 verbose parsed url   search: null,
+19 verbose parsed url   query: null,
+19 verbose parsed url   pathname: '—-save-dev',
+19 verbose parsed url   path: '—-save-dev',
+19 verbose parsed url   href: '—-save-dev' }
+20 verbose cache add [ 'gulp', null ]
+21 verbose cache add name=undefined spec="gulp" args=["gulp",null]
+22 verbose parsed url { protocol: null,
+22 verbose parsed url   slashes: null,
+22 verbose parsed url   auth: null,
+22 verbose parsed url   host: null,
+22 verbose parsed url   port: null,
+22 verbose parsed url   hostname: null,
+22 verbose parsed url   hash: null,
+22 verbose parsed url   search: null,
+22 verbose parsed url   query: null,
+22 verbose parsed url   pathname: 'gulp',
+22 verbose parsed url   path: 'gulp',
+22 verbose parsed url   href: 'gulp' }
+23 silly lockFile 11e8b0fb-save-dev —-save-dev
+24 verbose lock —-save-dev /home/edom/.npm/11e8b0fb-save-dev.lock
+25 silly lockFile 9750c68d-gulp gulp
+26 verbose lock gulp /home/edom/.npm/9750c68d-gulp.lock
+27 silly lockFile 11e8b0fb-save-dev —-save-dev
+28 silly lockFile 11e8b0fb-save-dev —-save-dev
+29 verbose addNamed [ '—-save-dev', '' ]
+30 verbose addNamed [ null, '*' ]
+31 silly lockFile 9d36908c-save-dev —-save-dev@
+32 verbose lock —-save-dev@ /home/edom/.npm/9d36908c-save-dev.lock
+33 silly lockFile 9750c68d-gulp gulp
+34 silly lockFile 9750c68d-gulp gulp
+35 verbose addNamed [ 'gulp', '' ]
+36 verbose addNamed [ null, '*' ]
+37 silly lockFile 72f4391e-gulp gulp@
+38 verbose lock gulp@ /home/edom/.npm/72f4391e-gulp.lock
+39 silly addNameRange { name: 'gulp', range: '*', hasData: false }
+40 silly addNameRange { name: '—-save-dev', range: '*', hasData: false }
+41 verbose url raw gulp
+42 verbose url resolving [ 'https://registry.npmjs.org/', './gulp' ]
+43 verbose url resolved https://registry.npmjs.org/gulp
+44 info trying registry request attempt 1 at 23:21:30
+45 verbose etag "71QIF9VVA3IJ1JM53RN6XV3RX"
+46 http GET https://registry.npmjs.org/gulp
+47 verbose url raw —-save-dev
+48 verbose url resolving [ 'https://registry.npmjs.org/', './%E2%80%94-save-dev' ]
+49 verbose url resolved https://registry.npmjs.org/%E2%80%94-save-dev
+50 info trying registry request attempt 1 at 23:21:30
+51 http GET https://registry.npmjs.org/%E2%80%94-save-dev
+52 http 304 https://registry.npmjs.org/gulp
+53 silly registry.get cb [ 304,
+53 silly registry.get   { date: 'Sun, 13 Dec 2015 15:21:31 GMT',
+53 silly registry.get     via: '1.1 varnish',
+53 silly registry.get     'cache-control': 'max-age=300',
+53 silly registry.get     etag: '"71QIF9VVA3IJ1JM53RN6XV3RX"',
+53 silly registry.get     age: '231',
+53 silly registry.get     connection: 'keep-alive',
+53 silly registry.get     'x-served-by': 'cache-nrt6130-NRT',
+53 silly registry.get     'x-cache': 'HIT',
+53 silly registry.get     'x-cache-hits': '2',
+53 silly registry.get     'x-timer': 'S1450020091.087088,VS0,VE0',
+53 silly registry.get     vary: 'Accept' } ]
+54 verbose etag gulp from cache
+55 silly addNameRange number 2 { name: 'gulp', range: '*', hasData: true }
+56 silly addNameRange versions [ 'gulp',
+56 silly addNameRange   [ '0.0.1',
+56 silly addNameRange     '0.0.2',
+56 silly addNameRange     '0.0.3',
+56 silly addNameRange     '0.0.4',
+56 silly addNameRange     '0.0.5',
+56 silly addNameRange     '0.0.7',
+56 silly addNameRange     '0.0.8',
+56 silly addNameRange     '0.0.9',
+56 silly addNameRange     '0.1.0',
+56 silly addNameRange     '0.2.0',
+56 silly addNameRange     '1.0.0',
+56 silly addNameRange     '1.1.0',
+56 silly addNameRange     '1.2.0',
+56 silly addNameRange     '1.2.1',
+56 silly addNameRange     '2.0.0',
+56 silly addNameRange     '2.0.1',
+56 silly addNameRange     '2.1.0',
+56 silly addNameRange     '2.2.0',
+56 silly addNameRange     '2.3.0',
+56 silly addNameRange     '2.4.0',
+56 silly addNameRange     '2.4.1',
+56 silly addNameRange     '2.6.0',
+56 silly addNameRange     '2.6.1',
+56 silly addNameRange     '2.7.0',
+56 silly addNameRange     '3.0.0',
+56 silly addNameRange     '3.1.1',
+56 silly addNameRange     '3.1.2',
+56 silly addNameRange     '3.1.3',
+56 silly addNameRange     '3.1.4',
+56 silly addNameRange     '3.2.0',
+56 silly addNameRange     '3.2.1',
+56 silly addNameRange     '3.2.2',
+56 silly addNameRange     '3.2.3',
+56 silly addNameRange     '3.2.4',
+56 silly addNameRange     '3.2.5',
+56 silly addNameRange     '3.3.0',
+56 silly addNameRange     '3.3.1',
+56 silly addNameRange     '3.3.2',
+56 silly addNameRange     '3.3.4',
+56 silly addNameRange     '3.4.0',
+56 silly addNameRange     '3.5.0',
+56 silly addNameRange     '3.5.1',
+56 silly addNameRange     '3.5.2',
+56 silly addNameRange     '3.5.5',
+56 silly addNameRange     '3.5.6',
+56 silly addNameRange     '3.6.0',
+56 silly addNameRange     '3.6.1',
+56 silly addNameRange     '3.6.2',
+56 silly addNameRange     '3.7.0',
+56 silly addNameRange     '3.8.0',
+56 silly addNameRange     '3.8.1',
+56 silly addNameRange     '3.8.2',
+56 silly addNameRange     '3.8.3',
+56 silly addNameRange     '3.8.4',
+56 silly addNameRange     '3.8.5',
+56 silly addNameRange     '3.8.6',
+56 silly addNameRange     '3.8.7',
+56 silly addNameRange     '3.8.8',
+56 silly addNameRange     '3.8.9',
+56 silly addNameRange     '3.8.10',
+56 silly addNameRange     '3.8.11',
+56 silly addNameRange     '3.9.0' ] ]
+57 verbose addNamed [ 'gulp', '3.9.0' ]
+58 verbose addNamed [ '3.9.0', '3.9.0' ]
+59 silly lockFile c2697a61-gulp-3-9-0 gulp@3.9.0
+60 verbose lock gulp@3.9.0 /home/edom/.npm/c2697a61-gulp-3-9-0.lock
+61 verbose read json /home/edom/.npm/gulp/3.9.0/package/package.json
+62 silly lockFile c2697a61-gulp-3-9-0 gulp@3.9.0
+63 silly lockFile c2697a61-gulp-3-9-0 gulp@3.9.0
+64 silly lockFile 72f4391e-gulp gulp@
+65 silly lockFile 72f4391e-gulp gulp@
+66 http 404 https://registry.npmjs.org/%E2%80%94-save-dev
+67 silly registry.get cb [ 404,
+67 silly registry.get   { 'content-type': 'application/json',
+67 silly registry.get     'cache-control': 'max-age=0',
+67 silly registry.get     'content-length': '74',
+67 silly registry.get     'accept-ranges': 'bytes',
+67 silly registry.get     date: 'Sun, 13 Dec 2015 15:21:32 GMT',
+67 silly registry.get     via: '1.1 varnish',
+67 silly registry.get     age: '0',
+67 silly registry.get     connection: 'keep-alive',
+67 silly registry.get     'x-served-by': 'cache-nrt6132-NRT',
+67 silly registry.get     'x-cache': 'MISS',
+67 silly registry.get     'x-cache-hits': '0',
+67 silly registry.get     'x-timer': 'S1450020091.095675,VS0,VE1485' } ]
+68 silly addNameRange number 2 { name: '—-save-dev', range: '*', hasData: true }
+69 silly addNameRange versions [ undefined, [] ]
+70 error TypeError: Cannot read property 'latest' of undefined
+70 error     at next (/usr/share/npm/lib/cache.js:656:35)
+70 error     at /usr/share/npm/lib/cache.js:644:5
+70 error     at saved (/usr/share/npm/node_modules/npm-registry-client/lib/get.js:138:7)
+70 error     at /usr/lib/nodejs/graceful-fs/polyfills.js:133:7
+70 error     at Object.oncomplete (fs.js:107:15)
+71 error If you need help, you may report this log at:
+71 error     <http://bugs.debian.org/npm>
+71 error or use
+71 error     reportbug --attach /usr/local/server/www/Blog/npm-debug.log npm
+72 error System Linux 3.11.0-12-generic
+73 error command "/usr/bin/nodejs" "/usr/bin/npm" "install" "—-save-dev" "gulp"
+74 error cwd /usr/local/server/www/Blog
+75 error node -v v0.10.15
+76 error npm -v 1.2.18
+77 error type non_object_property_load
+78 verbose exit [ 1, true ]
