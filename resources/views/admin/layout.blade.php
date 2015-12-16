@@ -27,7 +27,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">{{ config('blog.title') }} Admin</a>
+            <a class="navbar-brand" href="#">{{ config('blog.title') }} Admin-Part</a>
         </div>
         <div class="collapse navbar-collapse" id="navbar-menu">
             @include('admin.partials.navbar')

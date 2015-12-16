@@ -3,18 +3,18 @@
 @section('content')
     <div class="container-fluid">
         <div class="row page-title-row">
-            <div class="col-md-6">
+            <div class="col-md-6 col-lg-6">
                 <h3>Posts <small>» Listing</small></h3>
             </div>
-            <div class="col-md-6 text-right">
+            <div class="col-md-6 col-lg-6 text-right">
                 <a href="/admin/post/create" class="btn btn-success btn-md">
-                    <i class="fa fa-plus-circle"></i> New Post
+                    <i class="fa fa-plus-circle fa-lg"></i> New Post
                 </a>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
 
                 @include('admin.partials.errors')
                 @include('admin.partials.success')
@@ -32,16 +32,16 @@
                     @foreach ($posts as $post)
                         <tr>
                             <td data-order="{{ $post->published_at->timestamp }}">
-                                {{ $post->published_at->format('j-M-y g:ia') }}
+                                {{ $post->published_at->format('Y-m-d H:i') }}
                             </td>
-                            <td>{{ $post->title }}</td>
-                            <td>{{ $post->subtitle }}</td>
+                            <td>{{str_limit($post->title,60)  }}</td>
+                            <td>{{str_limit($post->subtitle ,60)}}</td>
                             <td>
-                                <a href="/admin/post/{{ $post->id }}/edit" class="btn btn-xs btn-info">
-                                    <i class="fa fa-edit"></i> Edit
+                                <a href="/admin/post/{{ $post->id }}/edit" class="btn  btn-info btn-sm">
+                                    <i class="fa fa-edit fa-lg"></i> Edit
                                 </a>
-                                <a href="/blog/{{ $post->slug }}" class="btn btn-xs btn-warning">
-                                    <i class="fa fa-eye"></i> View
+                                <a href="/blog/{{ $post->slug }}" class="btn btn-warning btn-sm">
+                                    <i class="fa fa-eye fa-lg"></i> View
                                 </a>
                             </td>
                         </tr>

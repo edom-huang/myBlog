@@ -14,20 +14,51 @@
         </div>
 
         {{-- Collect the nav links, forms, and other content for toggling --}}
-        {{-- Collect the nav links, forms, and other content for toggling --}}
         <div class="collapse navbar-collapse" id="navbar-main">
+            {{--<ul class="nav navbar-nav">--}}
+                {{--<li>--}}
+                    {{--<a href="/">Home</a>--}}
+                {{--</li>--}}
+            {{--</ul>--}}
+            {{--<ul class="nav navbar-nav navbar-right">--}}
+                {{--<li>--}}
+                    {{--<a href="/contact">Contact</a>--}}
+                {{--</li>--}}
+                {{--<li>--}}
+                    {{--<a href="/auth/login">login</a>--}}
+                {{--</li>--}}
+            {{--</ul>--}}
             <ul class="nav navbar-nav">
-                <li>
-                    <a href="/">Home</a>
-                </li>
+                <li><a href="/">Blog Home</a></li>
+                @if (Auth::check())
+                    <li @if (Request::is('admin/post*')) class="active" @endif>
+                        <a href="/admin/post">Posts</a>
+                    </li>
+                    <li @if (Request::is('admin/tag*')) class="active" @endif>
+                        <a href="/admin/tag">Tags</a>
+                    </li>
+                    <li @if (Request::is('admin/upload*')) class="active" @endif>
+                        <a href="/admin/upload">Uploads</a>
+                    </li>
+                @endif
             </ul>
+
             <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a href="/contact">Contact</a>
-                </li>
-                <li>
-                    <a href="/auth/login">login</a>
-                </li>
+                @if (Auth::guest())
+                    <li><a href="/auth/login">Login</a></li>
+                    <li><a href="/auth/register">SignUp</a> </li>
+                @else
+                    <li>
+                        <a href="/contact">Contact Us</a>
+                    </li>
+                    <li >
+                        <a href="#">
+                            {{ Auth::user()->name }}
+                        </a>
+                    </li>
+                    <li><a href="/auth/logout">Logout</a></li>
+
+                @endif
             </ul>
         </div>
     </div>

@@ -53,7 +53,7 @@ class Tag extends Model
      */
     public static function layout($tag, $default = 'blog.layouts.index')
     {
-        $layout = static::whereTag($tag)->pluck('layouts');
+        $layout = static::whereTag($tag)->pluck('layout');
 
         return $layout ?: $default;
     }

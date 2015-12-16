@@ -22,7 +22,7 @@
     <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body style="background-color: #F0F0F0">
 @include('blog.partials.page-nav')
 
 @yield('page-header')

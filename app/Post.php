@@ -2,7 +2,7 @@
 
 namespace App;
 
-use App\Services\Markdowner;
+use App\Services\MarkDowner;
 use Illuminate\Database\Eloquent\Model;
 use Carbon\Carbon;
 
@@ -10,7 +10,7 @@ class Post extends Model
 {
     protected $dates = ['published_at'];
     protected $fillable = [
-        'title', 'subtitle', 'content_raw', 'page_image', 'meta_description','layouts', 'is_draft', 'published_at',
+        'title', 'subtitle', 'content_raw', 'page_image', 'meta_description','layout', 'is_draft', 'published_at',
     ];
 
 
@@ -93,7 +93,7 @@ class Post extends Model
      */
     public function getPublishDateAttribute($value)
     {
-        return $this->published_at->format('M-j-Y');
+        return $this->published_at->format('Y-m-d');
     }
 
     /**
@@ -101,7 +101,7 @@ class Post extends Model
      */
     public function getPublishTimeAttribute($value)
     {
-        return $this->published_at->format('g:i A');
+        return $this->published_at->format('H:i');
     }
 
     /**

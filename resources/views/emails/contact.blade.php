@@ -6,6 +6,8 @@
     <li>Name: <strong>{{ $name }}</strong></li>
     <li>Email: <strong>{{ $email }}</strong></li>
     <li>Phone: <strong>{{ $phone }}</strong></li>
+    <li>Attach: <strong>{{ $attach }}</strong></li>
+    <li>Img: <strong>{{ $imgPath }}</strong></li>
 </ul>
 <hr>
 <p>
@@ -14,3 +16,5 @@
     @endforeach
 </p>
 <hr>
+<br>
+<img src="{{$message->embed($imgPath)}}">

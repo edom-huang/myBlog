@@ -3,7 +3,7 @@
 @section('page-header')
     <header class="intro-header"
             style="background-image: url('{{ page_image($page_image) }}')">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                     <div class="site-heading">
@@ -18,7 +18,7 @@
 @stop
 
 @section('content')
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
@@ -32,7 +32,8 @@
                             @endif
                         </a>
                         <p class="post-meta">
-                            Posted on {{ $post->published_at->format('F j, Y') }}
+                            {{--Posted on {{ $post->published_at->format('F j, Y') }}--}}
+                            Posted aaaon {{ $post->published_at->format('Y-m-d, H:i') }}
                             @if ($post->tags->count())
                                 in
                                 {!! join(', ', $post->tagLinks()) !!}

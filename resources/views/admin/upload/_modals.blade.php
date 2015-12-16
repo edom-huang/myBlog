@@ -58,7 +58,7 @@
                     <input type="hidden" name="_method" value="DELETE">
                     <input type="hidden" name="folder" value="{{ $folder }}">
                     <input type="hidden" name="del_file" id="delete-file-name2">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">
                         Cancel
                     </button>
                     <button type="submit" class="btn btn-danger">
@@ -94,7 +94,7 @@
                     <input type="hidden" name="_method" value="DELETE">
                     <input type="hidden" name="folder" value="{{ $folder }}">
                     <input type="hidden" name="del_folder" id="delete-folder-name2">
-                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">
                         Cancel
                     </button>
                     <button type="submit" class="btn btn-danger">
@@ -164,7 +164,7 @@
                 <img id="preview-image" src="x" class="img-responsive">
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">
                     Cancel
                 </button>
             </div>

@@ -2,7 +2,6 @@
 
 @section('content')
     <div class="container-fluid">
-
         {{-- 顶部工具栏 --}}
         <div class="row page-title-row">
             <div class="col-md-6">
@@ -18,10 +17,10 @@
             </div>
             <div class="col-md-6 text-right">
                 <button type="button" class="btn btn-success btn-md" data-toggle="modal" data-target="#modal-folder-create">
-                    <i class="fa fa-plus-circle"></i> New Folder
+                    <i class="fa fa-plus-circle fa-lg"></i> New Folder
                 </button>
                 <button type="button" class="btn btn-primary btn-md" data-toggle="modal" data-target="#modal-file-upload">
-                    <i class="fa fa-upload"></i> Upload
+                    <i class="fa fa-upload fa-lg"></i> Upload
                 </button>
             </div>
         </div>
@@ -57,7 +56,7 @@
                             <td>-</td>
                             <td>-</td>
                             <td>
-                                <button type="button" class="btn btn-xs btn-danger" onclick="delete_folder('{{ $name }}')">
+                                <button type="button" class="btn btn-sm btn-danger" onclick="delete_folder('{{ $name }}')">
                                     <i class="fa fa-times-circle fa-lg"></i>
                                     Delete
                                 </button>
@@ -72,6 +71,22 @@
                                 <a href="{{ $file['webPath'] }}">
                                     @if (is_image($file['mimeType']))
                                         <i class="fa fa-file-image-o fa-lg fa-fw"></i>
+                                    @elseif(is_pdf($file['mimeType']))
+                                        <i class="fa fa-file-pdf-o fa-lg fa-fw"></i>
+                                    @elseif(is_doc($file['mimeType']))
+                                        <i class="fa fa-file-word-o fa-lg fa-fw"></i>
+                                    @elseif(is_excel($file['mimeType']))
+                                        <i class="fa fa-file-excel-o fa-lg fa-fw"></i>
+                                    @elseif(is_ppt($file['mimeType']))
+                                        <i class="fa fa-file-powerpoint-o fa-lg fa-fw"></i>
+                                    @elseif(is_txt($file['mimeType']))
+                                        <i class="fa fa-file-text-o fa-lg fa-fw"></i>
+                                    @elseif(is_avi($file['mimeType']))
+                                        <i class="fa fa-file-movie-o fa-lg fa-fw"></i>
+                                    @elseif(is_rmvb($file['mimeType']))
+                                        <i class="fa fa-file-video-o fa-lg fa-fw"></i>
+                                    @elseif(is_mp3($file['mimeType']))
+                                        <i class="fa fa-file-audio-o fa-lg fa-fw"></i>
                                     @else
                                         <i class="fa fa-file-o fa-lg fa-fw"></i>
                                     @endif
@@ -79,15 +94,16 @@
                                 </a>
                             </td>
                             <td>{{ $file['mimeType'] or 'Unknown' }}</td>
-                            <td>{{ $file['modified']->format('j-M-y g:ia') }}</td>
+                            {{--<td>{{ $file['modified']->format('j-M-y g:ia') }}</td>--}}
+                            <td>{{ $file['modified']->format('Y-m-j H:i') }}</td>
                             <td>{{ human_filesize($file['size']) }}</td>
                             <td>
-                                <button type="button" class="btn btn-xs btn-danger" onclick="delete_file('{{ $file['name'] }}')">
+                                <button type="button" class="btn btn-sm btn-danger" onclick="delete_file('{{ $file['name'] }}')">
                                     <i class="fa fa-times-circle fa-lg"></i>
                                     Delete
                                 </button>
                                 @if (is_image($file['mimeType']))
-                                    <button type="button" class="btn btn-xs btn-success" onclick="preview_image('{{ $file['webPath'] }}')">
+                                    <button type="button" class="btn btn-sm btn-success" onclick="preview_image('{{ $file['webPath'] }}')">
                                         <i class="fa fa-eye fa-lg"></i>
                                         Preview
                                     </button>

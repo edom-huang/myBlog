@@ -54,6 +54,20 @@
                     </div>
                     <div class="row control-group">
                         <div class="form-group col-xs-12 controls">
+                            <label for="attach">Attach File</label>
+                            <input type="text" class="form-control" id="attach" name="attach"
+                                   value="{{ old('attach') }}">
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 controls">
+                            <label for="text">Img</label>
+                            <input type="text" class="form-control" id="imgPath" name="imgPath"
+                                   value="http://laravelacademy.org/wp-statics/images/carousel/LaravelAcademy.jpg">
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 controls">
                             <label for="message">Message</label>
               <textarea rows="5" class="form-control" id="message"
                         name="message">{{ old('message') }}</textarea>

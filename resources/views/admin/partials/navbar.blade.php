@@ -16,6 +16,7 @@
 <ul class="nav navbar-nav navbar-right">
     @if (Auth::guest())
         <li><a href="/auth/login">Login</a></li>
+        <li><a href="/auth/register">SignUp</a> </li>
     @else
         <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
@@ -25,6 +26,10 @@
             </a>
             <ul class="dropdown-menu" role="menu">
                 <li><a href="/auth/logout">Logout</a></li>
+                <li><a href="#">your profile</a> </li>
+                <li><a href="/admin/post">your articles</a></li>
+                <li><a href="/admin/tag">your tags</a></li>
+                <li><a href="/admin/upload">your uploads</a> </li>
             </ul>
         </li>
     @endif

@@ -14,7 +14,7 @@
         </div>
 
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-12 col-md-12 col-lg-12">
 
                 @include('admin.partials.errors')
                 @include('admin.partials.success')
@@ -49,8 +49,8 @@
                                 @endif
                             </td>
                             <td>
-                                <a href="/admin/tag/{{ $tag->id }}/edit" class="btn btn-xs btn-info">
-                                    <i class="fa fa-edit"></i> Edit
+                                <a href="/admin/tag/{{ $tag->id }}/edit" class="btn btn-sm btn-info">
+                                    <i class="fa fa-edit fa-lg"></i> Edit
                                 </a>
                             </td>
                         </tr>

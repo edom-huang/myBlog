@@ -36,18 +36,22 @@
                             <div class="col-md-8">
                                 <div class="form-group">
                                     <div class="col-md-10 col-md-offset-2">
-                                        <button type="submit" class="btn btn-primary btn-lg" name="action" value="continue">
+                                        <button type="submit" class="btn btn-primary btn-md" name="action" value="continue">
                                             <i class="fa fa-floppy-o"></i>
-                                            Save - Continue
+                                            Save and Continue
                                         </button>
-                                        <button type="submit" class="btn btn-success btn-lg" name="action" value="finished">
+                                        <button type="submit" class="btn btn-success btn-md" name="action" value="finished">
                                             <i class="fa fa-floppy-o"></i>
-                                            Save - Finished
+                                            Save and Back
                                         </button>
-                                        <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#modal-delete">
+                                        <button type="button" class="btn btn-danger btn-md" data-toggle="modal" data-target="#modal-delete">
                                             <i class="fa fa-times-circle"></i>
                                             Delete
                                         </button>
+                                        <a href="/admin/post" role="button" class="btn btn-info btn-md">
+                                            <i class="fa fa-backward"></i>
+                                            Back To Post
+                                        </a>
                                     </div>
                                 </div>
                             </div>
