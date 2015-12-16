@@ -6,7 +6,11 @@
  */
 
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-
+@media (min-width: 768px) {
+    #content{
+        width:700px;height:400px;visibility:hidden;display: block;
+    }
+}
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;

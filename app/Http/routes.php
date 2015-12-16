@@ -44,3 +44,11 @@ get('/auth/logout', 'Auth\AuthController@getLogout');
 // Register...
 Route::get('auth/register', 'Auth\AuthController@getRegister');
 Route::post('auth/register', 'Auth\AuthController@postRegister');
+
+//teat something
+get('test',function(){
+    return view('test');
+});
+get('test2',function(){
+    return view('test2');
+});

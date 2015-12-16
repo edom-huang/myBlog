@@ -7,7 +7,9 @@
 
     <title>{{ config('blog.title') }} Admin</title>
     <link href="/assets/css/admin.css" rel="stylesheet">
-    {{--<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet">--}}
+    <link rel="stylesheet" href="/assets/js/themes/default/default.css" />
+    <script charset="utf-8" src="/assets/js/kindeditor-min.js"></script>
+    <script charset="utf-8" src="/assets/js/zh_CN.js"></script>
     @yield('styles')
 
     <!--[if lt IE 9]>
@@ -37,8 +39,7 @@
 
 @yield('content')
 <script src="/assets/js/admin.js"></script>
-{{--<script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>--}}
-{{--<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>--}}
+
 
 @yield('scripts')
 

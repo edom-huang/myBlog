@@ -53,6 +53,7 @@
                     </li>
                     <li >
                         <a href="#">
+                            <span class="fa fa-user fa-lg" style="color: #0073bb"></span>&nbsp;&nbsp;
                             {{ Auth::user()->name }}
                         </a>
                     </li>

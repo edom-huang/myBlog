@@ -33,7 +33,7 @@
                         </a>
                         <p class="post-meta">
                             {{--Posted on {{ $post->published_at->format('F j, Y') }}--}}
-                            Posted aaaon {{ $post->published_at->format('Y-m-d, H:i') }}
+                            Posted on {{ $post->published_at->format('Y-m-d, H:i') }}
                             @if ($post->tags->count())
                                 in
                                 {!! join(', ', $post->tagLinks()) !!}

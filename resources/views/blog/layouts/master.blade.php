@@ -14,6 +14,7 @@
 
     {{-- Styles --}}
     <link href="/assets/css/blog.css" rel="stylesheet">
+    <link href="/assets/css/backToTop.css" rel="stylesheet">
     @yield('styles')
 
     {{-- HTML5 Shim and Respond.js for IE8 support --}}
@@ -29,9 +30,30 @@
 @yield('content')
 
 @include('blog.partials.page-footer')
-
+<p id="back-to-top"><a href="#top"><span class="fa fa-arrow-up fa-lg"></span><bold>Top</bold></a></p>
 {{-- Scripts --}}
 <script src="/assets/js/blog.js"></script>
+<script>
+    $(function(){
+        //当滚动条的位置处于距顶部100像素以下时，跳转链接出现，否则消失
+        $(function () {
+            $(window).scroll(function(){
+                if ($(window).scrollTop()>100){
+                    $("#back-to-top").fadeIn(1500);
+                }
+                else
+                {
+                    $("#back-to-top").fadeOut(1500);
+                }
+            });
+            //当点击跳转链接后，回到页面顶部位置
+            $("#back-to-top").click(function(){
+                $('body,html').animate({scrollTop:0},1000);
+                return false;
+            });
+        });
+    });
+</script>
 @yield('scripts')
 
 </body>

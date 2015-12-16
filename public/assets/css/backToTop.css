@@ -1,0 +1,23 @@
+/*returnTop*/
+p#back-to-top{
+    position:fixed;
+    display:none;
+    bottom:100px;
+    right:10px;
+}
+p#back-to-top a{
+    text-align:center;
+    text-decoration:none;
+    color:forestgreen;
+    display:block;
+    border:1px solid darkgreen;
+    width:64px;
+    /*使用CSS3中的transition属性给跳转链接中的文字添加渐变效果*/
+    -moz-transition:color 1s;
+    -webkit-transition:color 1s;
+    -o-transition:color 1s;
+}
+p#back-to-top a:hover{
+    color:green;
+}
+

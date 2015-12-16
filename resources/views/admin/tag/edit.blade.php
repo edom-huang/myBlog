@@ -44,6 +44,11 @@
                                         Delete
                                     </button>
 
+                                    <a role="button" href="/admin/tag" class="btn btn-info btn-md">
+                                        <i class="fa fa-backward fa-lg"></i>
+                                        Go Back
+                                    </a>
+
                                 </div>
                             </div>
 
