@@ -10,7 +10,7 @@
                         <h1>Contact Me</h1>
                         <hr class="small">
                         <h2 class="subheading">
-                            Have questions? I have answers (maybe).
+                            Have any questions? Contact me!!
                         </h2>
                     </div>
                 </div>
@@ -26,6 +26,7 @@
                 @include('admin.partials.errors')
                 @include('admin.partials.success')
                 <p>
+                    <h3>Have any questions?</h3>
                     Want to get in touch with me? Fill out the form below to send me a
                     message and I will try to get back to you within 24 hours!
                 </p>

@@ -14,7 +14,7 @@
         </div>
 
         <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 
                 @include('admin.partials.errors')
                 @include('admin.partials.success')
@@ -25,10 +25,10 @@
                         <th>Tag</th>
                         <th>Title</th>
                         <th class="hidden-sm">Subtitle</th>
-                        <th class="hidden-md">Page Image</th>
-                        <th class="hidden-md">Meta Description</th>
-                        <th class="hidden-md">Layout</th>
-                        <th class="hidden-sm">Direction</th>
+                        <th class="hidden-xs">Page Image</th>
+                        <th class="hidden-xs">Meta Description</th>
+                        <th class="hidden-xs">Layout</th>
+                        <th class="hidden-xs">Direction</th>
                         <th data-sortable="false">Actions</th>
                     </tr>
                     </thead>
@@ -38,10 +38,10 @@
                             <td>{{ $tag->tag }}</td>
                             <td>{{ $tag->title }}</td>
                             <td class="hidden-sm">{{ $tag->subtitle }}</td>
-                            <td class="hidden-md">{{ $tag->page_image }}</td>
-                            <td class="hidden-md">{{ $tag->meta_description }}</td>
-                            <td class="hidden-md">{{ $tag->layout }}</td>
-                            <td class="hidden-sm">
+                            <td class="hidden-xs">{{ $tag->page_image }}</td>
+                            <td class="hidden-xs">{{ $tag->meta_description }}</td>
+                            <td class="hidden-xs">{{ $tag->layout }}</td>
+                            <td class="hidden-xs">
                                 @if ($tag->reverse_direction)
                                     Reverse
                                 @else

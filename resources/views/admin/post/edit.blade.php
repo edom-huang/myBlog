@@ -35,8 +35,8 @@
 
                             <div class="col-md-8">
                                 <div class="form-group">
-                                    <div class="col-md-10 col-md-offset-2">
-                                        <button type="submit" class="btn btn-primary btn-md" name="action" value="continue">
+                                    <div class="col-md-10 col-md-offset-2 ">
+                                        <button type="submit" class="btn btn-primary btn-md hidden-xs" name="action" value="continue">
                                             <i class="fa fa-floppy-o"></i>
                                             Save and Continue
                                         </button>
@@ -48,7 +48,7 @@
                                             <i class="fa fa-times-circle"></i>
                                             Delete
                                         </button>
-                                        <a href="/admin/post" role="button" class="btn btn-info btn-md">
+                                        <a href="/admin/post" role="button" class="btn btn-info btn-md hidden-xs">
                                             <i class="fa fa-backward"></i>
                                             Back To Post
                                         </a>

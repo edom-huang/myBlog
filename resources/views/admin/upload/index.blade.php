@@ -35,7 +35,7 @@
                     <thead>
                     <tr>
                         <th>Name</th>
-                        <th>Type</th>
+                        <th class="hidden-xs">Type</th>
                         <th>Date</th>
                         <th>Size</th>
                         <th data-sortable="false">Actions</th>
@@ -52,7 +52,7 @@
                                     {{ $name }}
                                 </a>
                             </td>
-                            <td>Folder</td>
+                            <td class="hidden-xs">Folder</td>
                             <td>-</td>
                             <td>-</td>
                             <td>
@@ -93,7 +93,7 @@
                                     {{ $file['name'] }}
                                 </a>
                             </td>
-                            <td>{{ $file['mimeType'] or 'Unknown' }}</td>
+                            <td class="hidden-xs">{{ $file['mimeType'] or 'Unknown' }}</td>
                             {{--<td>{{ $file['modified']->format('j-M-y g:ia') }}</td>--}}
                             <td>{{ $file['modified']->format('Y-m-j H:i') }}</td>
                             <td>{{ human_filesize($file['size']) }}</td>
