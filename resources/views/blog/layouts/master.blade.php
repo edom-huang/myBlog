@@ -30,7 +30,7 @@
 @yield('content')
 
 @include('blog.partials.page-footer')
-<p id="back-to-top"><a href="#top"><span class="fa fa-arrow-up fa-lg"></span><bold>Top</bold></a></p>
+<p id="back-to-top"><a href="#top"><span class="fa fa-arrow-up fa-lg" style="color: #ffffff;margin: 13px;"></span></a></p>
 {{-- Scripts --}}
 <script src="/assets/js/blog.js"></script>
 <script>
