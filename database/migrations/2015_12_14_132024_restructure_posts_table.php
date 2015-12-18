@@ -17,7 +17,7 @@ class RestructurePostsTable extends Migration
             $table->string('page_image')->after('content_html');
             $table->string('meta_description')->after('page_image');
             $table->boolean('is_draft')->after('meta_description');
-            $table->string('layouts')->after('is_draft')->default('blog.layouts.post');
+            $table->string('layout')->after('is_draft')->default('blog.layouts.post');
         });
     }
 
@@ -27,7 +27,7 @@ class RestructurePostsTable extends Migration
     public function down()
     {
         Schema::table('posts', function (Blueprint $table) {
-            $table->dropColumn('layouts');
+            $table->dropColumn('layout');
             $table->dropColumn('is_draft');
             $table->dropColumn('meta_description');
             $table->dropColumn('page_image');
