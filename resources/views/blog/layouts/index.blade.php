@@ -32,8 +32,7 @@
                             @endif
                         </a>
                         <p class="post-meta">
-                            {{--Posted on {{ $post->published_at->format('F j, Y') }}--}}
-                            Posted on {{ $post->published_at->format('Y-m-d, H:i') }}
+                            <i class="fa fa-calendar fa-lg"></i> Posted on {{ $post->published_at->format('Y-m-d, H:i') }}
                             @if ($post->tags->count())
                                 in
                                 {!! join(', ', $post->tagLinks()) !!}
