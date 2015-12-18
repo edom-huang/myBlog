@@ -8,16 +8,12 @@ p#back-to-top{
 p#back-to-top a{
     text-align:center;
     text-decoration:none;
-    color:forestgreen;
     display:block;
-    border:1px solid darkgreen;
-    width:64px;
+    border-radius: 10px;
+    background-color: #E74430
     /*使用CSS3中的transition属性给跳转链接中的文字添加渐变效果*/
     -moz-transition:color 1s;
     -webkit-transition:color 1s;
     -o-transition:color 1s;
-}
-p#back-to-top a:hover{
-    color:green;
 }
 
